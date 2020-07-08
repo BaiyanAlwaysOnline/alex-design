@@ -13,10 +13,10 @@
     "UI",
     "React"
   ],
-  "homepage": "https://github.com/BaiyanAlwaysOnline/Blog/tree/master/alex-design",
+  "homepage": "https://github.com/BaiyanAlwaysOnline/alex-design",
   "repository": {
     "type": "git",
-    "url": "https://github.com/BaiyanAlwaysOnline/Blog/tree/master/alex-design"
+    "url": "https://github.com/BaiyanAlwaysOnline/alex-design"
   },
   "files": [
     "dist"
