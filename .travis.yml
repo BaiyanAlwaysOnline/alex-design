@@ -1,16 +1,19 @@
 language: node_js
 node_js:
-   - "stable"
+  - "stable"
 cache:
   directories:
-   - node_modules
+  - node_modules
 env:
-   - CI=true
-script: 
-   - npm run build-storybook
+  - CI=true
+script:
+  - npm run build-storybook
 deploy:
-   provider: pages
-   github_token: $github_token  # Set in the settings page of your repository, as a secure variable
-   local_dir: storybook-static
-   on:
-      branch: master
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  local_dir: storybook-static
+  on:
+    branch: master
+  
+  
