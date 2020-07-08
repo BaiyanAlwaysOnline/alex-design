@@ -7,7 +7,7 @@ cache:
 env:
    - CI = true
 script: 
-   - npm run build-story-book
+   - npm run build story-book
 deploy:
    provider: pages
    skip_cleanup: true
