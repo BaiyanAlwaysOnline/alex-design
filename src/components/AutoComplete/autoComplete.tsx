@@ -7,7 +7,7 @@ import React, {
   KeyboardEvent,
   ReactElement,
 } from "react";
-import clasNames from "classnames";
+import classNames from "classnames";
 import { InputProps, Input } from "../Input/input";
 import Transition from "../Transition/transition";
 import Icon from "../Icon/icon";
@@ -37,7 +37,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
     renderOption,
     ...restProps
   } = props;
-  const [inputVal, setInputVall] = useState(value);
+  const [inputVal, setInputVal] = useState(value);
   const [suggestions, setSuggestions] = useState<DataSourceType[]>([]);
   const [loading, setLoading] = useState(false);
   const [hightlightIndex, setHighlightIndex] = useState(-1);
@@ -67,11 +67,11 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
   }, [debounceVal, fetchSuggestions]);
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     const value = e.target.value.trim();
-    setInputVall(value);
+    setInputVal(value);
     triggerSearch.current = true;
   };
   const handleClickItem = (item: DataSourceType) => {
-    setInputVall(item.value);
+    setInputVal(item.value);
     setSuggestions([]);
     onSelect && onSelect(item);
     triggerSearch.current = false;
@@ -91,7 +91,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
       >
         <ul className="alex-suggestion-list">
           {suggestions.map((item, index) => {
-            const classes = clasNames("suggestion-item", {
+            const classes = classNames("suggestion-item", {
               "is-active": hightlightIndex === index,
             });
             return (
@@ -113,12 +113,12 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
       </Transition>
     );
   };
-  const handleKeyDowm = (index: number) => {
+  const handleKeyDown = (index: number) => {
     if (index < 0) index = 0;
     if (index >= suggestions.length) index = suggestions.length - 1;
     setHighlightIndex(index);
   };
-  const onKeyDowm = (e: KeyboardEvent) => {
+  const onKeyDown = (e: KeyboardEvent) => {
     switch (e.keyCode) {
       // 回车
       case 13:
@@ -128,11 +128,11 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
         break;
       // 上
       case 38:
-        handleKeyDowm(hightlightIndex - 1);
+        handleKeyDown(hightlightIndex - 1);
         break;
       // 下
       case 40:
-        handleKeyDowm(hightlightIndex + 1);
+        handleKeyDown(hightlightIndex + 1);
         break;
       // esc
       case 27:
@@ -148,7 +148,7 @@ export const AutoComplete: FC<AutoCompleteProps> = (props) => {
         {...restProps}
         value={inputVal}
         onChange={onChange}
-        onKeyDown={onKeyDowm}
+        onKeyDown={onKeyDown}
       />
       {generateDropdown()}
     </div>
