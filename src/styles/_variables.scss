@@ -30,7 +30,7 @@ $danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-800 !default;
 
-$theme-colors: 
+$theme-colors:
 (
   "primary":    $primary,
   "secondary":  $secondary,
@@ -286,3 +286,16 @@ $progress-bg:                       $gray-200 !default;
 $progress-border-radius:            $border-radius !default;
 $progress-bar-color:                $white !default;
 $progress-bar-transition:           width .6s ease !default;
+
+// Message
+$messageBoxShadow
+: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 6px 16px 0 rgba(0, 0, 0, 0.08), 0 9px 28px 8px rgba(0, 0, 0, 0.05);
+$messageHeight :                        2rem !default
+$messageMinWeight :                        200px !default
+$messageBorderRadius:                   $border-radius !default;
+$message-font-weight:                   400;
+$message-padding-y:                     .375rem !default;
+$message-padding-x:                     .75rem !default;
+$message-font-family:                   $font-family-base !default;
+$message-font-size:                     $font-size-base !default;
+

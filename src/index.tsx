@@ -11,3 +11,4 @@ export { default as Icon } from "./components/Icon";
 export { default as Progress } from "./components/Progress";
 export { default as Upload } from "./components/Upload";
 export { default as Transition } from "./components/Transition";
+export { default as Message } from './components/Message'

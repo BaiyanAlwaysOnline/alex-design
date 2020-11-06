@@ -1,0 +1,17 @@
+.alex-message-wrapper {
+  box-shadow: $messageBoxShadow;
+  border-radius: $messageBorderRadius;
+  height: $messageHeight;
+  min-width: $messageMinWeight;
+  line-height: $messageHeight;
+  font-weight: $message-font-weight;
+  font-family: $message-font-family;
+  font-size: $message-font-size;
+  animation: messageCloseAnimate 300ms ease-in;
+  &.is-show {
+    animation: messageOpenAnimate 300ms ease-in;
+  }
+  .alex-message-text-wrapper {
+    margin-left: 15px;
+  }
+}
