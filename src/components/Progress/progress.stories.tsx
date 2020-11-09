@@ -1,9 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { storiesOf } from "@storybook/react";
-import { action } from "@storybook/addon-actions";
-import Icon from "../Icon/icon";
 import Progress from "./progress";
-import Button from "../Button/button";
 
 const ProgressComp = () => {
   const [percent, setPercent] = useState(10);

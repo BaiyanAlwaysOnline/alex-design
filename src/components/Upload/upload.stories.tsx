@@ -6,9 +6,9 @@ import { UploadFile } from "./upload";
 import Icon from "../Icon/icon";
 import Button from "../Button/button";
 
-const beforeUpload = (file: File) => {
-  return true;
-};
+// const beforeUpload = (file: File) => {
+//   return true;
+// };
 const defaultFileList: UploadFile[] = [
   { uid: "123", size: 1234, name: "hello.md", status: "loading", percent: 30 },
   { uid: "122", size: 1234, name: "xyz.md", status: "success", percent: 30 },

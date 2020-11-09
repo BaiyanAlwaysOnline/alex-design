@@ -106,10 +106,9 @@ export const Message: FC<MessageProps> = (props) => {
 
     // 渲染正确的icon
     const renderIcon = useMemo(() => {
-        return (type: MessageType) => {
-            switch (type) {
-                case "primary":
-                    return <Icon theme={type} icon='info-circle' />
+        switch (type) {
+            case "primary":
+                return <Icon theme={type} icon='info-circle' />
                 case "warning":
                     return <Icon theme={type} icon='exclamation-triangle' />
                 case "danger":
@@ -119,14 +118,13 @@ export const Message: FC<MessageProps> = (props) => {
                 default:
                     return null;
             }
-        }
     }, [type])
     const classes = classnames('alex-message-wrapper', {
         'is-show': !isShow
     })
     return (
         <div className={classes}>
-            {renderIcon(type)}
+            {renderIcon}
             <span className='alex-message-text-wrapper'>{content}</span>
         </div>
     )
