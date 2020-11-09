@@ -9,7 +9,7 @@ storiesOf("Message 消息提示", module)
         info: {
             text: `
     ~~~js
-    import message from "alex-ui";
+    import message from "alex-design";
     
     // 可以通过函数式调用组件：
     message.primary('primary！', { delay:5000, callback: () => {alert('回调执行！')} })

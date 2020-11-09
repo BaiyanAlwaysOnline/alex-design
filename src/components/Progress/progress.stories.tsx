@@ -30,7 +30,7 @@ storiesOf("Progress 进度条", module)
     info: {
       text: `
     ~~~js
-    import Progress from "alex-ui";
+    import Progress from "alex-design";
     ~~~
   `,
     },
