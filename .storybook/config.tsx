@@ -10,12 +10,12 @@ const wrapperStyle: React.CSSProperties = {
   width: "700px",
 };
 
-const storyWrapper = (stroyFn: any) => (
+const storyWrapper = (storyFn: any) => (
   <div style={wrapperStyle}>
     <h3>组件演示</h3>
     <br/>
     <br/>
-    {stroyFn()}
+    {storyFn()}
   </div>
 );
 addDecorator(storyWrapper);
