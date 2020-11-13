@@ -5,15 +5,15 @@ import Progress from "./progress";
 const ProgressComp = () => {
   const [percent, setPercent] = useState(10);
   useEffect(() => {
-    let timer;
-    timer = setInterval(() => {
+    let timer: number;
+    timer = window.setInterval(() => {
       setPercent((preState) => {
         if (preState >= 100) return 100;
         return preState + 10;
       });
     }, 500);
     return () => {
-      timer = null;
+      clearInterval(timer)
     };
   }, []);
   return (

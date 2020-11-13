@@ -80,7 +80,7 @@ export const Message: FC<MessageProps> = (props) => {
     }, [rootNode, parentNode])
 
     useEffect(() => {
-        //结束操作
+        // 结束操作
         let closeStart = fconfig.delay - fconfig.animationDuring;
         // 关闭弹窗
         let timer1 = window.setTimeout(
@@ -89,7 +89,7 @@ export const Message: FC<MessageProps> = (props) => {
             },
             closeStart > 0 ? closeStart : 0
         );
-        //移除DOM 执行回调
+        // 移除DOM 执行回调
         let timer2 = window.setTimeout(() => {
             setIsShow(false);
             unmount();
