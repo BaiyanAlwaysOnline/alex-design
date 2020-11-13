@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/BaiyanAlwaysOnline/alex-design/static/css/main.f797375b.chunk.css",
+    "main.js": "/BaiyanAlwaysOnline/alex-design/main.78719f0e755260a1990e.bundle.js",
+    "main.css.map": "/BaiyanAlwaysOnline/alex-design/static/css/main.f797375b.chunk.css.map",
+    "main.js.map": "/BaiyanAlwaysOnline/alex-design/main.78719f0e755260a1990e.bundle.js.map",
+    "runtime~main.js": "/BaiyanAlwaysOnline/alex-design/runtime~main.78719f0e755260a1990e.bundle.js",
+    "runtime~main.js.map": "/BaiyanAlwaysOnline/alex-design/runtime~main.78719f0e755260a1990e.bundle.js.map",
+    "vendors~main.css": "/BaiyanAlwaysOnline/alex-design/static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.js": "/BaiyanAlwaysOnline/alex-design/vendors~main.78719f0e755260a1990e.bundle.js",
+    "vendors~main.css.map": "/BaiyanAlwaysOnline/alex-design/static/css/vendors~main.f8f248a5.chunk.css.map",
+    "vendors~main.js.map": "/BaiyanAlwaysOnline/alex-design/vendors~main.78719f0e755260a1990e.bundle.js.map",
+    "iframe.html": "/BaiyanAlwaysOnline/alex-design/iframe.html",
+    "precache-manifest.e56bbd8d690542d4c64cdb9d23dee10c.js": "/BaiyanAlwaysOnline/alex-design/precache-manifest.e56bbd8d690542d4c64cdb9d23dee10c.js",
+    "service-worker.js": "/BaiyanAlwaysOnline/alex-design/service-worker.js",
+    "vendors~main.78719f0e755260a1990e.bundle.js.LICENSE.txt": "/BaiyanAlwaysOnline/alex-design/vendors~main.78719f0e755260a1990e.bundle.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime~main.78719f0e755260a1990e.bundle.js",
+    "static/css/vendors~main.f8f248a5.chunk.css",
+    "vendors~main.78719f0e755260a1990e.bundle.js",
+    "static/css/main.f797375b.chunk.css",
+    "main.78719f0e755260a1990e.bundle.js"
+  ]
+}
