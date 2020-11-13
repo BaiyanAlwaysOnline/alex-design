@@ -25,6 +25,7 @@ import { Button } from 'alex-design'
 
 **todos**
 
-- [ ] Messgae	全局提示组件
-- [ ] Select         下拉组件
+- [x] Messgae	全局提示组件
+- [x] Modal         弹窗组件
+- [ ] Tree            可拖拽的树形组件
 
